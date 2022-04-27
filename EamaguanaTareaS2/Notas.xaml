@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EamaguanaTareaS2.Notas">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout>
+                <Label Text="Tarea Semana 2" HorizontalOptions="Center" FontSize="16"/>
+                <Label Text=" " HorizontalOptions="Center" FontSize="16"/>
+
+                <Label Text="PARCIAL 1" HorizontalOptions="Start" FontSize="18"/>
+            
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Label Text="Seguimiento"  FontSize="14" Grid.Row="0" Grid.Column="0"/>
+                    <Entry x:Name="txtSeguimiento1" FontSize="14" Placeholder="Ingrese la nota" Keyboard="Numeric" Grid.Row="0" Grid.Column="1" HorizontalTextAlignment="Center"/>
+
+                    <Label Text="Examen" FontSize="14" Grid.Row="1" Grid.Column="0"/>
+                    <Entry x:Name="txtExamen1" FontSize="14" Placeholder="Ingrese la nota" Keyboard="Numeric" Grid.Row="1" Grid.Column="1" HorizontalTextAlignment="Center"/>
+
+                    <Label Text="Nota Parcial 1" FontSize="14" Grid.Row="2" Grid.Column="0"/>
+                    <Label x:Name="lblParcial1" FontSize="14" VerticalOptions="Center" HorizontalOptions="Center" TextColor="SteelBlue" Grid.Row="2" Grid.Column="1"/>
+
+                </Grid>
+
+            
+                <Label Text="PARCIAL 2" HorizontalOptions="Start" FontSize="18"/>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Label Text="Seguimiento"  FontSize="14" Grid.Row="0" Grid.Column="0"/>
+                    <Entry x:Name="txtSeguimiento2" FontSize="14" Placeholder="Ingrese la nota" Keyboard="Numeric" Grid.Row="0" Grid.Column="1" HorizontalTextAlignment="Center"/>
+
+                    <Label Text="Examen" FontSize="14" Grid.Row="1" Grid.Column="0"/>
+                    <Entry x:Name="txtExamen2" FontSize="14" Placeholder="Ingrese la nota" Keyboard="Numeric" Grid.Row="1" Grid.Column="1" HorizontalTextAlignment="Center"/>
+
+                    <Label Text="Nota Parcial 2" FontSize="14" Grid.Row="2" Grid.Column="0" BackgroundColor="Azure"/>
+                    <Label x:Name="lblParcial2" FontSize="14" VerticalOptions="Center" HorizontalOptions="Center" TextColor="SteelBlue" Grid.Row="2" Grid.Column="1"/>
+
+                </Grid>
+
+         
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />                  
+                    </Grid.ColumnDefinitions>
+
+                    <Button x:Name="btnNotaFinal" Text="Nota Final" Clicked="btnNotaFinal_Clicked" Grid.Row="0" Grid.Column="0"/>
+                    <Label x:Name="lblFinal" FontSize="16" VerticalOptions="Center" HorizontalOptions="Center" TextColor="SteelBlue" Grid.Row="0" Grid.Column="1" />
+
+                </Grid>
+
+
+            </StackLayout>
+        </ScrollView>
+
+    </ContentPage.Content>
+</ContentPage>
